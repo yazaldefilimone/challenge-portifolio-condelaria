@@ -8,10 +8,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   * {
     outline: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
     font-family: ${({ theme }) => `${theme.fonts}`};
     color: ${(props) => props.theme.colors.firstColor};
     ::-webkit-scrollbar {
@@ -27,30 +23,39 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  body {
-    background: ${(props) => props.theme.colors.bodyColor};
-    font: 400 1rem ${({ theme }) => `${theme.fonts}`};
-  }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-  img {
-    width: 100%;
-    max-width: 100%;
-    user-select: none;
-    pointer-events: none;
-    cursor: default;
-  }
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: ${({ theme }) => `${theme.fonts}`};
+  font-size: ${({ theme }) => theme.fontSizes.normal};
+  background-color: ${({ theme }) => theme.colors.bodyColor};
+  color: ${({ theme }) => theme.colors.textColor};
+  transition: .3s; 
+}
+h1,h2,h3{
+  color: ${({ theme }) => theme.colors.titleColor};
+  font-weight: 600;  
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 
-  ul, li{
-    list-style: none;
-  }
 
-  button {
-    cursor: pointer;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-
+img {
+  width: 100%;
+  max-width: 100%;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
 `;
