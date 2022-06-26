@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  ::root {
+    --hue: ${({ theme }) => theme.var.hue};
+    --sat: ${({ theme }) => theme.var.sat};
+    --lig:${({ theme }) => theme.var.lig};
+  }
   * {
     outline: none;
     margin: 0;
