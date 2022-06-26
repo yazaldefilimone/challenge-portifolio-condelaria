@@ -17,7 +17,7 @@ export default defineConfig({
       adjustDuplicates: false,
       useAbsolute: false,
       useIndexes: false,
-      useConfig: true,
+      useConfig: false,
       useTypescript: true,
       root: process.cwd(),
     }),
