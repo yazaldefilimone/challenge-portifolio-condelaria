@@ -3,4 +3,9 @@ export type User = {
   photo: string;
   skill: string;
   work: string;
+  totalProjects: number;
+  yearsWork: number;
+  satisfied: number;
+  number: string;
+  email: string;
 };
