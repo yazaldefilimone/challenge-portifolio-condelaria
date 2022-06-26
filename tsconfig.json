@@ -16,15 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@/*": ["./src/*"],
-      "@data/*": ["./src/data/*"],
-      "@domain/*": ["./src/domain/*"],
-      "@infra/*": ["./src/infra/*"],
-      "@main/*": ["./src/main/*"],
-      "@presentation/*": ["./src/presentation/*"],
-      "@shared/*": ["./src/shared/*"],
-      "@assets/*": ["./src/shared/assets/*"],
-      "@components/*": ["./src/presentation/components/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"],
