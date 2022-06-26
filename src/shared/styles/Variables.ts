@@ -19,6 +19,11 @@ export class Variables {
         bodyColor: `hsl(${this.hue}, "100%", "99%")`,
         containerColor: '#fff',
       },
+      var: {
+        hue: this.hue,
+        sat: this.sat,
+        lig: this.lig,
+      },
       fonts: ['Poppins', 'sans-serif'],
       fontSizes: {
         h2: '1.5rem',
