@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react';
 
-import { InfoGroupContainer } from './styles';
+import './styles.scss';
 
 interface InfoGroupProps {
   children: ReactNode;
@@ -9,9 +9,9 @@ interface InfoGroupProps {
 
 export const InfoGroup: FunctionComponent<InfoGroupProps> = ({ children, infoNumber }) => {
   return (
-    <InfoGroupContainer>
-      <h3>{infoNumber}</h3>
+    <div className="profile__info-group">
+      <h3 className="profile__info-number">{infoNumber}</h3>
       {children}
-    </InfoGroupContainer>
+    </div>
   );
 };
